@@ -6,5 +6,7 @@ body {
 }
 
 hr {
-    color: aqua;
+    background-color: cyan;
+    height: 4px;
+    opacity: 1;
 }
