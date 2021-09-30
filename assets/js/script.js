@@ -13,7 +13,7 @@ $( document ).ready(function() {
 
     //Navbar style
     $(window).scroll(function () {
-        if ($("#navbar").offset().top > 56) {
+        if ($("#navbar").offset().top > 350) {
             $("#navbar").addClass("navbar-color");
         } else {
             $("#navbar").removeClass("navbar-color");
