@@ -3,6 +3,7 @@
 $( document ).ready(function() {
     console.log( "ready!" );
 
+    //Tooltips
     var tooltipTriggerList = [].slice.call( 
         document.querySelectorAll('[data-bs-toggle="tooltip"]') 
     ); 
@@ -10,9 +11,19 @@ $( document ).ready(function() {
         return new bootstrap.Tooltip(tooltipTriggerEl); 
     }); 
 
-    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl)
-})
+    //popovers
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+    })
+
+    //Navbar style
+    $(window).scroll(function () {
+        if ($("#navbar").offset().top > 56) {
+            $("#navbar").addClass("navbar-color");
+        } else {
+            $("#navbar").removeClass("navbar-color");
+        }
+    });
 
 });
