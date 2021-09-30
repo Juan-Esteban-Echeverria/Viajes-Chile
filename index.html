@@ -37,7 +37,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top"> <!--transparent-->
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="assets/img/viajes.svg" alt="" width="30" height="24" class="d-inline-block align-text-top ms-5">
+            <img src="assets/img/viajes.svg" alt="Logo viajes" width="30" height="24" class="d-inline-block align-text-top ms-5">
             Viajes Chile
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,13 +68,13 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Fauna de las montañas">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Isla de Pascua">
               </div>
               <div class="carousel-item">
-                <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="...">
+                <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Pinguino">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -130,37 +130,41 @@
             <div class="row row-cols-1 row-cols-md-4 g-3">
                 <div class="col">
                   <div class="card h-100 bg-info">
-                    <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
+                    <img src="assets/img/card1.jpg" class="card-img-top" alt="Rios" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Quiero saber mas sobre los Rios!">
                     <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
+                      <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet.</h5>
                       <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis blanditiis iusto consequatur cum eum a debitis aspernatur itaque totam consequuntur?</p>
+                      <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#rios">Ver más</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100 bg-info">
-                    <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
+                    <img src="assets/img/card2.jpg" class="card-img-top" alt="montañas" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Quiero saber mas sobre las Montañas!">
                     <div class="card-body">
-                      <h5 class="card-title">Lorem, ipsum dolor.</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis vel architecto neque. Ipsa, quo omnis mollitia a quis aliquam.</p>
+                      <h5 class="card-title fw-bold">Lorem, ipsum dolor.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis vel architecto neque. Ipsa, quo omnis mollitia a quis aliquam. Lorem, ipsum dolor.</p>
+                      <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#montañas">Ver más</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100 bg-info">
-                    <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
+                    <img src="assets/img/card3.jpg" class="card-img-top" alt="desiertos" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Quiero saber mas sobre los Desiertos!">
                     <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, necessitatibus itaque? Nisi illo, aspernatur blanditiis commodi recusandae sequi accusantium eveniet?</p>
+                      <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, necessitatibus itaque? Nisi illo, aspernatur blanditiis.</p>
+                      <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#desiertos">Ver más</a>
                     </div>
                   </div>
                 </div>
                 <div class="col">
                   <div class="card h-100 bg-info">
-                    <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
+                    <img src="assets/img/card4.jpg" class="card-img-top" alt="bosques" data-bs-toggle="tooltip" data-bs-placement="top" title="¡Quiero saber mas sobre los Bosques!">
                     <div class="card-body">
-                      <h5 class="card-title">Lorem ipsum dolor sit amet.</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quis alias distinctio quidem voluptate quam nobis animi ab, hic eius.</p>
+                      <h5 class="card-title fw-bold">Lorem ipsum dolor sit amet.</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis quis alias distinctio quidem voluptate quam nobis animi ab, hic eius. Lorem, ipsum dolor.</p>
+                      <a href="#" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#bosques">Ver más</a>
                     </div>
                   </div>
                 </div>
@@ -170,6 +174,91 @@
 
       <br>
 
+      <!--modal 1-->
+      <div class="modal fade" id="rios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-dark fw-bold" id="exampleModalLabel">Rios de Chile</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-dark">
+              <img src="assets/img/card1.jpg" class="img-fluid my-3" alt="rios">
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt totam dolorem deleniti maxime, expedita adipisci sunt est porro earum dolore qui dicta id quibusdam quidem ipsum? Neque molestias impedit magni!</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illum dolor facere exercitationem ipsa numquam velit ipsam laborum inventore ducimus veniam, officia iusto cumque rem ut quisquam vel! Eum, beatae!</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit saepe corrupti ducimus ut repellendus rerum sequi molestias sit neque facere, libero exercitationem necessitatibus vero ratione cumque molestiae dolorum commodi.</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!--Modal 2-->
+    <div class="modal fade" id="montañas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark fw-bold" id="exampleModalLabel">Montañas de Chile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-dark">
+            <img src="assets/img/card2.jpg" class="img-fluid my-3" alt="montañas">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt totam dolorem deleniti maxime, expedita adipisci sunt est porro earum dolore qui dicta id quibusdam quidem ipsum? Neque molestias impedit magni!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illum dolor facere exercitationem ipsa numquam velit ipsam laborum inventore ducimus veniam, officia iusto cumque rem ut quisquam vel! Eum, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit saepe corrupti ducimus ut repellendus rerum sequi molestias sit neque facere, libero exercitationem necessitatibus vero ratione cumque molestiae dolorum commodi.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 3-->
+    <div class="modal fade" id="desiertos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark fw-bold" id="exampleModalLabel">Desiertos de Chile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-dark">
+            <img src="assets/img/card3.jpg" class="img-fluid my-3" alt="desiertos">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt totam dolorem deleniti maxime, expedita adipisci sunt est porro earum dolore qui dicta id quibusdam quidem ipsum? Neque molestias impedit magni!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illum dolor facere exercitationem ipsa numquam velit ipsam laborum inventore ducimus veniam, officia iusto cumque rem ut quisquam vel! Eum, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit saepe corrupti ducimus ut repellendus rerum sequi molestias sit neque facere, libero exercitationem necessitatibus vero ratione cumque molestiae dolorum commodi.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 3-->
+    <div class="modal fade" id="bosques" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-dark fw-bold" id="exampleModalLabel">Bosques de Chile</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-dark">
+            <img src="assets/img/card4.jpg" class="img-fluid my-3" alt="bosques">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt totam dolorem deleniti maxime, expedita adipisci sunt est porro earum dolore qui dicta id quibusdam quidem ipsum? Neque molestias impedit magni!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse illum dolor facere exercitationem ipsa numquam velit ipsam laborum inventore ducimus veniam, officia iusto cumque rem ut quisquam vel! Eum, beatae!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet suscipit saepe corrupti ducimus ut repellendus rerum sequi molestias sit neque facere, libero exercitationem necessitatibus vero ratione cumque molestiae dolorum commodi.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
       <!--Contacto-->
       <section id="contact" class="my-5">
           <div class="container">

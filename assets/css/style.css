@@ -1,10 +1,11 @@
+/* Color de fondo y fuente */
 body {
     background-color: #000000;
     color: #FFFFFF;
-
     font-family: 'Roboto', sans-serif;
 }
 
+/* Mas color a los hr */
 hr {
     background-color: cyan;
     height: 4px;
